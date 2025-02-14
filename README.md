@@ -40,6 +40,32 @@
 
 ---
 
+## Model
+
+### Model User
+![USER MODEL AUTH](https://github.com/user-attachments/assets/7ad63ca1-8b5d-489e-9690-8dc9e952423c)
+
+Penjelasan:
+- Membuat model User
+- set_password() =  Mengubah password menjadi hash
+- check_password() =  Memverifikasi password
+- __repr__ =  Untuk debugging
+
+
+### Model Student
+![STUDENT DB](https://github.com/user-attachments/assets/1024035d-be69-4d7a-80cb-4b4662b212f3)
+
+Model ini menyimpan data siswa seperti nama, umur, dan kelas
+
+---
+
+## Authentication
+![USER AUTH](https://github.com/user-attachments/assets/e0c0d78b-e0ae-4691-a698-68f325605dce)
+
+Penjelasan : 
+- Autentikasi berbasis HTTP
+- Mengecek apakah username & password cocok di database
+
 ### Routing, Redirecting
 
 ### /login
