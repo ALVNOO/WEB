@@ -2,7 +2,7 @@
 
 ## ANALISIS
 
-### Analisis Routing dan Navigasi
+## Analisis Routing dan Navigasi
 
 - / =  Menampilkan halaman utama (index.html)
 - /login = Halaman login dan proses autentikasi
@@ -15,7 +15,7 @@
 
 ---
 
-### Impor Modul dan Konfigurasi Aplikasi
+## Impor Modul dan Konfigurasi Aplikasi
 ![IMPORT](https://github.com/user-attachments/assets/4dc31218-6692-42db-809c-d0d95235f363)
 
 - Flask → Framework utama
