@@ -1,8 +1,8 @@
 # WEB
 
-##ANALISA
+## ANALISA
 
-###Analisis Routing dan Navigasi
+### Analisis Routing dan Navigasi
 
 / =  Menampilkan halaman utama (index.html)
 /login = Halaman login dan proses autentikasi
