@@ -68,7 +68,7 @@ Penjelasan :
 
 ---
 
-### Routing, Redirecting
+## Routing and Redirecting
 
 ### /login
 ![LOGIN](https://github.com/user-attachments/assets/c3751424-7dca-4dbf-a831-c715827453de)
