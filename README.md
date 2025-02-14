@@ -17,7 +17,7 @@
 
 ### Routing, Redirecting
 
-/Login
+### /Login
 
 Proses
 - User mengisi username dan password
@@ -25,14 +25,14 @@ Proses
 - Jika gagal tetap di /login dan menampilkan eror
 
 
-/Logout
+### /Logout
 
 Proses
 - Session dihapus dengan menggunakan session.clear ()
 - User akan redirect ke halaman utama (/) atau ke index.html
 
 
-/students
+### /students
 
 Proses
 - Mengecek apakah user sudah login
@@ -40,7 +40,8 @@ Proses
 - Jika sudah akan ditampilkan daftar mahasiswa
 
 
-/add
+### /add
+
 Proses
 - Mengecek apakah user sudah login
 - Jika belum, akan redirect ke /Login
@@ -48,7 +49,7 @@ Proses
 - Akan redirect ke /students setelah data disimpan 
 
 
-/edit/<int:id>
+### /edit/<int:id>
 
 Proses
 - Mengecek apakah user sudah login
@@ -57,7 +58,7 @@ Proses
 - Jika sudah berhasil edit akan redirect ke /students dengan redirect(url_for('student')) yang dimana student adalah fungsi yang ada di dalam route /students
 
 
-/delete/<id>
+### /delete/<id>
 
 Proses
 - Mengecek apakah user sudah login
