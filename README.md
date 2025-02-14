@@ -129,5 +129,62 @@ Hubungan antar class:
 ![sequence diagram drawio](https://github.com/user-attachments/assets/e790e400-68d5-4e6c-b0b7-afd2f05cdded)
 
 
+Registrasi User (/user/create)
+
+- User/Admin mengakses /user/create → FlaskApp menampilkan form registrasi
+- User mengisi form → Data dikirim ke FlaskApp
+- FlaskApp mengecek username ke Database melalui Controller
+- Jika username belum ada, FlaskApp membuat user baru di Database
+- Database mengonfirmasi bahwa user berhasil dibuat
+- FlaskApp menampilkan notifikasi sukses dan redirect ke halaman utama /index
 
 
+Login User (/login)
+
+- User memasukkan kredensial login → FlaskApp memproses permintaan
+- FlaskApp meminta validasi kredensial ke Controller
+- Controller mengambil data user dari Database
+- Jika kredensial valid, status autentikasi dikembalikan
+- User diarahkan ke halaman /students setelah login berhasil
+
+
+Logout User (/logout)
+
+- User melakukan logout → FlaskApp memproses permintaan
+- Controller menghapus sesi user dari sistem
+- Setelah logout berhasil, user diarahkan ke halaman login (/login)
+
+
+Menampilkan Daftar Mahasiswa (GET /students)
+
+- User mengakses /students → FlaskApp meminta daftar mahasiswa dari Controller
+- Controller mengambil data mahasiswa dari Database
+- Database mengembalikan daftar mahasiswa ke Controller
+- Controller meneruskan data ke FlaskApp
+- FlaskApp menampilkan daftar mahasiswa ke user
+
+
+Menambahkan Mahasiswa (POST /students)
+
+- User mengirimkan data mahasiswa baru ke FlaskApp
+- FlaskApp meneruskan data ke Controller
+- Controller menyimpan data ke Database
+- Database mengonfirmasi penyimpanan data
+- FlaskApp mengembalikan respons sukses ke user
+
+
+Mengedit Mahasiswa (PUT /students/{id})
+- User mengirim permintaan untuk mengedit mahasiswa tertentu
+- FlaskApp meneruskan data ke Controller
+- Controller mengupdate data mahasiswa di Database
+- Database mengonfirmasi update
+- FlaskApp mengembalikan hasil ke user dan melakukan redirect ke /students
+
+
+Menghapus Mahasiswa (DELETE /students/{id})
+
+- User mengirim permintaan untuk menghapus mahasiswa tertentu
+- FlaskApp meneruskan permintaan ke Controller
+- Controller menghapus data mahasiswa dari Database
+- Database mengonfirmasi bahwa data telah dihapus
+- FlaskApp mengembalikan hasil ke user dan melakukan redirect ke /students
