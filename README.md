@@ -42,7 +42,7 @@ Proses
 - Jika gagal tetap di /login dan menampilkan eror
 
 
-### /Logout
+### /logout
 ![LOGOUT](https://github.com/user-attachments/assets/5ea2b047-1791-4c9d-abb6-422c27c9f8fc)
 
 Proses
