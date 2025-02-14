@@ -4,14 +4,16 @@
 
 ### Analisis Routing dan Navigasi
 
-/ =  Menampilkan halaman utama (index.html)
-/login = Halaman login dan proses autentikasi
-/logout	= Logout dan hapus sesi
-/students	= Menampilkan daftar mahasiswa (student.html)
-/add	= Menambahkan mahasiswa baru
-/delete/<int:id> = Menghapus mahasiswa berdasarkan ID
-/edit/<int:id>	= Mengedit informasi mahasiswa
-/users/create	= Membuat akun baru
+- / =  Menampilkan halaman utama (index.html)
+- /login = Halaman login dan proses autentikasi
+- /logout	= Logout dan hapus sesi
+- /students	= Menampilkan daftar mahasiswa (student.html)
+- /add	= Menambahkan mahasiswa baru
+- /delete/<int:id> = Menghapus mahasiswa berdasarkan ID
+- /edit/<int:id>	= Mengedit informasi mahasiswa
+- /users/create	= Membuat akun baru
+
+---
 
 ### Routing, Redirecting
 
