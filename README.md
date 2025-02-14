@@ -1,4 +1,4 @@
-![EDIT](https://github.com/user-attachments/assets/a81f7f06-9ea8-4f3d-9609-b37de1b332b4)![IMPORT](https://github.com/user-attachments/assets/48ae75b9-a5b2-40a0-bcaf-6cf05d50b9ee)# WEB
+# WEB
 
 ## ANALISIS
 
