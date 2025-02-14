@@ -29,6 +29,15 @@
 - HTTPBasicAuth → Untuk autentikasi berbasis HTTP
 - werkzeug.security → Untuk hash password
 
+
+![FLASK](https://github.com/user-attachments/assets/0d13c742-a4e6-4533-b5ec-99a3eda43a67)
+
+- Membuat objek Flask
+- secret_key → Digunakan untuk session
+- Konfigurasi database SQLite (students.db)
+- Inisialisasi SQLAlchemy (db)
+- Inisialisasi HTTP Authentication (auth)
+
 ---
 
 ### Routing, Redirecting
