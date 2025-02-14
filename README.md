@@ -51,6 +51,7 @@ Penjelasan:
 - check_password() =  Memverifikasi password
 - __repr__ =  Untuk debugging
 
+---
 
 ### Model Student
 ![STUDENT DB](https://github.com/user-attachments/assets/1024035d-be69-4d7a-80cb-4b4662b212f3)
