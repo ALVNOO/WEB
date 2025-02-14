@@ -88,3 +88,46 @@ Proses
 - Jika sudah mahasiswa akan dihapus berdasarkan id
 - Setelah berhasil hapus mahasiswa akan redirect ke /students dengan redirect(url_for('student')) yang dimana student adalah fungsi yang ada di dalam route /students
 
+
+---
+
+## USE CASE DIAGRAM
+![USE CASE DIAGRAM drawio](https://github.com/user-attachments/assets/eaac02e4-f360-4c0f-8972-4465336525d6)
+
+Admin/User berinteraksi dengan sistem dalam tiga skenario utama:
+- Login/Logout :
+  - dapat masuk ke dalam sistem dengan memasukkan username dan password
+  - bisa logout untuk keluar dari sistem
+- Create Account:
+  - Admin/User dapat membuat akun baru dalam sistem
+- CRUD Mahasiswa :
+  - Admin/User yang sudah login dapat menambah, mengedit, menghapus, dan melihat data mahasiswa dalam sistem
+
+---
+
+
+## CLASS DIAGRAM
+![CLASS DIAGRAM drawio](https://github.com/user-attachments/assets/46880e5a-4382-43a7-af72-9a98e18ab796)
+
+- Class Student (Mahasiswa) : Data mahasiswa yang dikelola dalam sistem
+- Class User : Pengguna yang dapat login ke dalam sistem
+- Class FlaskApp : aplikasi utama berbasis Flask yang menangani request pengguna
+- Class Database (SQLAlchemy) : database yang menyimpan data mahasiswa dan user
+
+Hubungan antar class:
+
+- Student dengan FlaskApp (Asosiasi) : FlaskApp mengelola data mahasiswa dengan menyediakan fitur CRUD
+- FlaskApp dengan User (Dependency) : FlaskApp menangani login/logout dan memverifikasi autentikasi user
+- FlaskApp dengan Database (SQLAlchemy) (Dependency) : FlaskApp berinteraksi dengan database untuk menyimpan dan mengambil data user serta mahasiswa
+- Student & User dengan Database (SQLAlchemy) (Agregasi) : Database menyimpan informasi mahasiswa dan user, dan dapat diakses melalui FlaskApp
+
+
+---
+
+
+## SEQUENCE DIAGRAM
+![sequence diagram drawio](https://github.com/user-attachments/assets/e790e400-68d5-4e6c-b0b7-afd2f05cdded)
+
+
+
+
